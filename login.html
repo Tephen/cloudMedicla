@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf8">
+    <title>登陆</title>
+    <style>
+        body {
+            background-image: url(images/bg.jpg);
+        }
+        
+        body header {
+            position: fixed;
+            top: 15vh;
+            left: 20vw;
+            color: white;
+            font-family: "Microsoft Yahei";
+            font-size: 2em;
+        }
+        
+        body #main {
+            position: fixed;
+            top: 30vh;
+            left: 42vw;
+        }
+        
+        body #main form fieldset {
+            border: none;
+        }
+        
+        body #main form #input .input {
+            display: block;
+            margin: 3vh;
+            height: 40px;
+            width: 270px;
+            border-radius: 12px;
+            background-color: transparent;
+            border: 1px solid white;
+        }
+        
+        body #main form #input .input.buttons {
+            padding: 0px;
+            display: flex;
+            flex-wrap: nowrap;
+            border: none;
+        }
+        
+        body #main form #input .input.buttons #sick {
+            color: #fff;
+            height: 40px;
+            padding: 0;
+            margin: 0;
+            display: inline-block;
+            border: 1px solid white;
+            border-radius: 0 12px 12px 0;
+            background-color: transparent;
+            border-left-color: gainsboro;
+            letter-spacing: 3px;
+            font-size: 15px;
+        }
+        
+        body #main form #input .input.buttons #doctor {
+            color: #fff;
+            height: 40px;
+            padding: 0;
+            margin: 0;
+            display: inline-block;
+            border: 1px solid white;
+            border-radius: 12px 0 0 12px;
+            background-color: transparent;
+            border-right-color: gainsboro;
+            letter-spacing: 3px;
+            font-size: 15px;
+        }
+        
+        body #main form #input .input.buttons #doctor:hover {
+            color: grey;
+            background-color: #fff;
+        }
+        
+        body #main form #input .input.buttons #sick:hover {
+            color: grey;
+            background-color: #fff;
+        }
+        
+        body #main form #input .name {
+            background: url(images/username.ico) no-repeat 15px 6px;
+        }
+        
+        body #main form #input .password {
+            background: url(images/password.ico) no-repeat 15px 6px;
+        }
+        
+        body #main form #input .input.register {
+            background-color: transparent;
+            padding: 0;
+        }
+        
+        body #main form #input .input.register:hover {
+            background-color: #fff;
+        }
+        
+        body #main form #input .input.register:hover #register {
+            color: grey;
+        }
+        
+        body #main form #input .input #register {
+            margin: auto;
+            width: 270px;
+            color: #fff;
+            font-family: "Microsoft Yahei";
+            letter-spacing: 7px;
+            font-size: 22px;
+            font-weight: 100;
+        }
+        
+        body #main form #input input {
+            margin-left: 60px;
+            border: none;
+            background-color: transparent;
+            color: #fff;
+            height: 40px;
+            width: 195px;
+        }
+        
+        body #main form #input #password {
+            letter-spacing: 3px;
+        }
+        
+        body #main form #input input:focus {
+            outline: none;
+        }
+        
+         :-moz-placeholder {
+            /* Mozilla Firefox 4 to 18 */
+            color: #fff;
+            opacity: 1;
+            font-family: "Microsoft Yahei";
+            font-size: 15px;
+            letter-spacing: 3px;
+            opacity: 0.9;
+        }
+        
+         ::-moz-placeholder {
+            /* Mozilla Firefox 19+ */
+            color: #fff;
+            opacity: 1;
+            font-family: "Microsoft Yahei";
+            font-size: 15px;
+            letter-spacing: 3px;
+            opacity: 0.9;
+        }
+        
+        input:-ms-input-placeholder {
+            color: #fff;
+            opacity: 1;
+            font-family: "Microsoft Yahei";
+            font-size: 15px;
+            letter-spacing: 3px;
+            opacity: 0.9;
+        }
+        
+        input::-webkit-input-placeholder {
+            color: #fff;
+            opacity: 1;
+            font-family: "Microsoft Yahei";
+            font-size: 15px;
+            letter-spacing: 3px;
+            opacity: 0.9;
+        }
+        
+        #other {
+            width: 270px;
+            margin-left: 5vh;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        #other a {
+            font-size: 0.8rem;
+            color: lightskyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        智慧云医疗系统
+    </header>
+    <section id="main">
+        <form>
+            <fieldset id="input">
+                <div class="input name">
+                    <input type="text" id="name" placeholder="用户名">
+                </div>
+                <div class="input password">
+                    <input type="password" id="password" placeholder="密码">
+                </div>
+                <div class="input buttons">
+                    <input type="button" id="doctor" value="医生登陆">
+                    <input type="button" id="sick" value="患者登陆">
+                </div>
+                <div class="input register">
+                    <a href="register.html">
+                        <input type="button" id="register" value="注册">
+                    </a>
+                </div>
+            </fieldset>
+        </form>
+        <div id="other">
+            <a href="">修改密码</a>
+            <a href="">忘记密码</a>
+        </div>
+    </section>
+</body>
+
+</html>  
